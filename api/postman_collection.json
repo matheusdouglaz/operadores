@@ -1,0 +1,30 @@
+{
+  "info": {
+    "name": "API Operadoras ANS",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Buscar Operadoras",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:5000/api/operadoras/search?q=saude",
+          "protocol": "http",
+          "host": ["localhost"],
+          "port": "5000",
+          "path": ["api", "operadoras", "search"],
+          "query": [
+            {
+              "key": "q",
+              "value": "saude",
+              "description": "Termo de busca"
+            }
+          ]
+        },
+        "description": "Busca operadoras por texto na razão social, nome fantasia, cidade ou UF"
+      }
+    }
+  ]
+} 
